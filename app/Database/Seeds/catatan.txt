@@ -1,0 +1,8 @@
+
+// ==========================================
+    | DatabaseSeeder.php
+// ==========================================
+
+Jangan asal rubah isi tabel bagian file DatabaseSeeder.php
+Perintah php spark db:seed DatabaseSeeder digunakan untuk mereset data, jadi data web otomatis akan kosong bersih
+

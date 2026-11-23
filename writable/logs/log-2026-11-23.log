@@ -1,0 +1,174 @@
+ERROR - 2026-11-23 14:26:07 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sistem_pengajuan_skripsi' in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_pengajua...', 3306, '', 0)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sistem_pengajuan_skripsi' in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-11-23 14:26:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sistem_pengajuan_skripsi'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('
+        SELECT
+            pengajuan.*,
+            mahasiswa.nama AS nama_mahasiswa,
+            topik_skripsi.nama_topik,
+            pembimbing.pembimbing_1,
+            pembimbing.pembimbing_2,
+            pembimbing.status_bimbingan,
+            d1.nama AS nama_pembimbing1,
+            d2.nama AS nama_pembimbing2
+        FROM pengajuan
+        JOIN mahasiswa ON pengajuan.npm = mahasiswa.npm
+        JOIN topik_skripsi ON pengajuan.id_topik = topik_skripsi.id_topik
+        LEFT JOIN pembimbing ON pengajuan.id_pengajuan = pembimbing.id_pengajuan
+        LEFT JOIN dosen d1 ON pembimbing.pembimbing_1 = d1.nidn
+        LEFT JOIN dosen d2 ON pembimbing.pembimbing_2 = d2.nidn
+        WHERE pengajuan.kondisi_data = \'Dibatalkan\'
+    ')
+ 3 APPPATH\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-23 14:26:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sistem_pengajuan_skripsi' in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_pengajua...', 3306, '', 0)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sistem_pengajuan_skripsi' in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-11-23 14:26:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sistem_pengajuan_skripsi'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('
+        SELECT
+            pengajuan.*,
+            mahasiswa.nama AS nama_mahasiswa,
+            topik_skripsi.nama_topik,
+            pembimbing.pembimbing_1,
+            pembimbing.pembimbing_2,
+            pembimbing.status_bimbingan,
+            d1.nama AS nama_pembimbing1,
+            d2.nama AS nama_pembimbing2
+        FROM pengajuan
+        JOIN mahasiswa ON pengajuan.npm = mahasiswa.npm
+        JOIN topik_skripsi ON pengajuan.id_topik = topik_skripsi.id_topik
+        LEFT JOIN pembimbing ON pengajuan.id_pengajuan = pembimbing.id_pengajuan
+        LEFT JOIN dosen d1 ON pembimbing.pembimbing_1 = d1.nidn
+        LEFT JOIN dosen d2 ON pembimbing.pembimbing_2 = d2.nidn
+        WHERE pengajuan.kondisi_data = \'Dibatalkan\'
+    ')
+ 3 APPPATH\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-23 14:26:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sistem_pengajuan_skripsi' in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_pengajua...', 3306, '', 0)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sistem_pengajuan_skripsi' in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-11-23 14:26:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sistem_pengajuan_skripsi'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\PengajuanModel.php(335): CodeIgniter\Database\BaseConnection->query('
+        SELECT
+            pengajuan.*,
+            mahasiswa.nama AS nama_mahasiswa,
+            topik_skripsi.nama_topik,
+            pembimbing.pembimbing_1,
+            pembimbing.pembimbing_2,
+            pembimbing.status_bimbingan,
+            d1.nama AS nama_pembimbing1,
+            d2.nama AS nama_pembimbing2
+        FROM pengajuan
+        JOIN mahasiswa ON pengajuan.npm = mahasiswa.npm
+        JOIN topik_skripsi ON pengajuan.id_topik = topik_skripsi.id_topik
+        LEFT JOIN pembimbing ON pengajuan.id_pengajuan = pembimbing.id_pengajuan
+        LEFT JOIN dosen d1 ON pembimbing.pembimbing_1 = d1.nidn
+        LEFT JOIN dosen d2 ON pembimbing.pembimbing_2 = d2.nidn
+        WHERE pengajuan.kondisi_data = \'Dibatalkan\'
+    ')
+ 3 APPPATH\Controllers\Admin.php(932): App\Models\PengajuanModel->getDibatalkan()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,40 @@
+CRITICAL - 2026-05-30 02:30:29 --> ErrorException: Undefined variable $batal
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 23.
+ 1 APPPATH\Views\admin\dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batal', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\dashboard.php', 23)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(81): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-30 02:30:33 --> ErrorException: Undefined variable $batal
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 23.
+ 1 APPPATH\Views\admin\dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batal', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\dashboard.php', 23)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(81): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-30 02:30:43 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 23.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Admin.php(81): view('admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

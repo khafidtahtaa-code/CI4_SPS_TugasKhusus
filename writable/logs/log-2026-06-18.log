@@ -1,0 +1,24 @@
+CRITICAL - 2026-06-18 10:00:42 --> ParseError: syntax error, unexpected token "endforeach", expecting end of file
+[Method: GET, Route: dosen/riwayat_review]
+in APPPATH\Views\dosen\riwayat_review.php on line 162.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('dosen/riwayat_review', [], true)
+ 3 APPPATH\Controllers\Dosen.php(196): view('dosen/riwayat_review', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dosen->riwayat_review()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-18 10:00:49 --> ParseError: syntax error, unexpected token "endforeach", expecting end of file
+[Method: GET, Route: dosen/riwayat_review]
+in APPPATH\Views\dosen\riwayat_review.php on line 162.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('dosen/riwayat_review', [], true)
+ 3 APPPATH\Controllers\Dosen.php(196): view('dosen/riwayat_review', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dosen->riwayat_review()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

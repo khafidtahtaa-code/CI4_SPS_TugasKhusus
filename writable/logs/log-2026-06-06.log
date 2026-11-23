@@ -1,0 +1,520 @@
+ERROR - 2026-06-06 02:00:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_pengajua...', 3306, '', 0)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...', Array)
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...', Array)
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2026-06-06 02:00:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: proses_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE username = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-06 02:01:03 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_pengajua...', 3306, '', 0)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...', Array)
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...', Array)
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2026-06-06 02:01:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: proses_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE username = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:18:11 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/data_pengajuan]
+in APPPATH\Views\admin\data_pengajuan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 4 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:18:11 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\admin\data_pengajuan.php on line 32.
+ 1 APPPATH\Views\admin\data_pengajuan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php', 32)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 5 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:18:13 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/data_pengajuan]
+in APPPATH\Views\admin\data_pengajuan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 4 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:18:13 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\admin\data_pengajuan.php on line 32.
+ 1 APPPATH\Views\admin\data_pengajuan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php', 32)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 5 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:19:00 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/data_pengajuan]
+in APPPATH\Views\admin\data_pengajuan.php on line 82.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 4 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:19:00 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\admin\data_pengajuan.php on line 82.
+ 1 APPPATH\Views\admin\data_pengajuan.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php', 82)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 5 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:19:14 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/data_pengajuan]
+in APPPATH\Views\admin\data_pengajuan.php on line 81.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 4 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:19:14 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\admin\data_pengajuan.php on line 81.
+ 1 APPPATH\Views\admin\data_pengajuan.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 5 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:19:15 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/data_pengajuan]
+in APPPATH\Views\admin\data_pengajuan.php on line 81.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 4 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 02:19:15 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\admin\data_pengajuan.php on line 81.
+ 1 APPPATH\Views\admin\data_pengajuan.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\data_pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/data_pengajuan', [], true)
+ 5 APPPATH\Controllers\Admin.php(399): view('admin/data_pengajuan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->data_pengajuan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-06 04:05:59 --> Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 04:05:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_id' cannot be null
+[Method: POST, Route: admin/proses_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 04:05:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 04:05:59 --> [Caused by] mysqli_sql_exception: Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:05:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-06 04:06:01 --> Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 04:06:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_id' cannot be null
+[Method: POST, Route: admin/proses_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 04:06:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 04:06:01 --> [Caused by] mysqli_sql_exception: Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (NULL, \'Selamat! Dosen pembimbing skripsi Anda telah ditetapkan.\', \'/mahasiswa/riwayat\', 0, \'2026-06-06 04:06:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifikasi` (`user_id`, `pesan`, `link`, `is_read`, `created_at`) VALUES (:user_id:, :pesan:, :link:, :is_read:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(503): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-06 12:17:47 --> Unknown column 'feedback_admin' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `pengajuan` SET `status` = \'Ditetapkan\', `feedback_admin` = \'\'
+WHERE `pengajuan`.`id_pengajuan` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pengajuan` SET `status` = \'Ditetapkan\', `feedback_admin` = \'\'
+WHERE `pengajuan`.`id_pengajuan` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pengajuan` SET `status` = \'Ditetapkan\', `feedback_admin` = \'\'
+WHERE `pengajuan`.`id_pengajuan` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `pengajuan` SET `status` = :status:, `feedback_admin` = :feedback_admin:
+WHERE `pengajuan`.`id_pengajuan` IN :pengajuan.id_pengajuan:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(521): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-06 12:18:07 --> Unknown column 'feedback_admin' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `pengajuan` SET `status` = \'Ditetapkan\', `feedback_admin` = \'\'
+WHERE `pengajuan`.`id_pengajuan` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pengajuan` SET `status` = \'Ditetapkan\', `feedback_admin` = \'\'
+WHERE `pengajuan`.`id_pengajuan` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pengajuan` SET `status` = \'Ditetapkan\', `feedback_admin` = \'\'
+WHERE `pengajuan`.`id_pengajuan` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `pengajuan` SET `status` = :status:, `feedback_admin` = :feedback_admin:
+WHERE `pengajuan`.`id_pengajuan` IN :pengajuan.id_pengajuan:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(521): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->proses_penetapan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:33 --> ErrorException: Undefined array key "file_pdf"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 117.
+ 1 APPPATH\Views\mahasiswa\status.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_pdf"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php', 117)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(173): view('mahasiswa/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:34 --> ErrorException: Undefined array key "file_pdf"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 117.
+ 1 APPPATH\Views\mahasiswa\status.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_pdf"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php', 117)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(173): view('mahasiswa/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:35 --> ErrorException: Undefined array key "file_pdf"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 117.
+ 1 APPPATH\Views\mahasiswa\status.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_pdf"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php', 117)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(173): view('mahasiswa/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:35 --> ErrorException: Undefined array key "file_pdf"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 117.
+ 1 APPPATH\Views\mahasiswa\status.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_pdf"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php', 117)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(173): view('mahasiswa/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:35 --> ErrorException: Undefined array key "file_pdf"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 117.
+ 1 APPPATH\Views\mahasiswa\status.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_pdf"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php', 117)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\status.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(173): view('mahasiswa/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:58 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: dosen/mahasiswa_bimbingan]
+in APPPATH\Views\dosen\mahasiswa_bimbingan.php on line 41.
+ 1 APPPATH\Views\dosen\mahasiswa_bimbingan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\dosen\\mahasiswa_bimbingan.php', 41)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\dosen\\mahasiswa_bimbingan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('dosen/mahasiswa_bimbingan', [], true)
+ 5 APPPATH\Controllers\Dosen.php(223): view('dosen/mahasiswa_bimbingan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dosen->mahasiswa_bimbingan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 12:20:59 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: dosen/mahasiswa_bimbingan]
+in APPPATH\Views\dosen\mahasiswa_bimbingan.php on line 41.
+ 1 APPPATH\Views\dosen\mahasiswa_bimbingan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\dosen\\mahasiswa_bimbingan.php', 41)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\dosen\\mahasiswa_bimbingan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('dosen/mahasiswa_bimbingan', [], true)
+ 5 APPPATH\Controllers\Dosen.php(223): view('dosen/mahasiswa_bimbingan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dosen->mahasiswa_bimbingan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 13:43:21 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: mahasiswa/riwayat]
+in APPPATH\Views\mahasiswa\riwayat.php on line 78.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/riwayat', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(205): view('mahasiswa/riwayat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->riwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 14:35:28 --> ErrorException: Undefined array key "status_pengajuan"
+[Method: GET, Route: mahasiswa/logbook]
+in APPPATH\Views\mahasiswa\logbook.php on line 104.
+ 1 APPPATH\Views\mahasiswa\logbook.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_pengajuan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\logbook.php', 104)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\logbook.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/logbook', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(420): view('mahasiswa/logbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->logbook()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 14:35:30 --> ErrorException: Undefined array key "status_pengajuan"
+[Method: GET, Route: mahasiswa/logbook]
+in APPPATH\Views\mahasiswa\logbook.php on line 104.
+ 1 APPPATH\Views\mahasiswa\logbook.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_pengajuan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\logbook.php', 104)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\logbook.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/logbook', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(420): view('mahasiswa/logbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->logbook()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-06 14:35:30 --> ErrorException: Undefined array key "status_pengajuan"
+[Method: GET, Route: mahasiswa/logbook]
+in APPPATH\Views\mahasiswa\logbook.php on line 104.
+ 1 APPPATH\Views\mahasiswa\logbook.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_pengajuan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\logbook.php', 104)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\logbook.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/logbook', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(420): view('mahasiswa/logbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->logbook()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

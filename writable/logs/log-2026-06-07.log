@@ -1,0 +1,42 @@
+CRITICAL - 2026-06-07 04:13:47 --> ErrorException: Undefined array key "tgl_dibatalkan"
+[Method: GET, Route: mahasiswa/riwayat]
+in APPPATH\Views\mahasiswa\riwayat.php on line 178.
+ 1 APPPATH\Views\mahasiswa\riwayat.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_dibatalkan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\riwayat.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\riwayat.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/riwayat', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(205): view('mahasiswa/riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-07 04:13:49 --> ErrorException: Undefined array key "tgl_dibatalkan"
+[Method: GET, Route: mahasiswa/riwayat]
+in APPPATH\Views\mahasiswa\riwayat.php on line 178.
+ 1 APPPATH\Views\mahasiswa\riwayat.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_dibatalkan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\riwayat.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\riwayat.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/riwayat', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(205): view('mahasiswa/riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-07 04:13:57 --> ErrorException: Undefined array key "tgl_dibatalkan"
+[Method: GET, Route: mahasiswa/riwayat]
+in APPPATH\Views\mahasiswa\riwayat.php on line 178.
+ 1 APPPATH\Views\mahasiswa\riwayat.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_dibatalkan"', 'C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\riwayat.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\mahasiswa\\riwayat.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/riwayat', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(205): view('mahasiswa/riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

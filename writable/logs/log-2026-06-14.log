@@ -1,0 +1,13 @@
+CRITICAL - 2026-06-14 12:47:53 --> Error: Call to undefined function character_limiter()
+[Method: GET, Route: admin/penetapan_pembimbing]
+in APPPATH\Views\admin\penetapan_pembimbing.php on line 126.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/penetapan_pembimbing', [], true)
+ 4 APPPATH\Controllers\Admin.php(464): view('admin/penetapan_pembimbing', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->penetapan_pembimbing()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

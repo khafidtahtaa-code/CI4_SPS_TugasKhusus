@@ -1,0 +1,42 @@
+CRITICAL - 2026-06-16 11:47:21 --> ErrorException: Undefined array key "nama_mahasiswa"
+[Method: GET, Route: admin/edit_pembimbing]
+in APPPATH\Views\admin\edit_pembimbing.php on line 44.
+ 1 APPPATH\Views\admin\edit_pembimbing.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_mahasiswa"', 'C:\\xampp82\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\edit_pembimbing.php', 44)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp82\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\edit_pembimbing.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/edit_pembimbing', [], true)
+ 5 APPPATH\Controllers\Admin.php(622): view('admin/edit_pembimbing', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->edit_pembimbing()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-16 11:50:37 --> ErrorException: Undefined array key "nama_mahasiswa"
+[Method: GET, Route: admin/edit_pembimbing]
+in APPPATH\Views\admin\edit_pembimbing.php on line 44.
+ 1 APPPATH\Views\admin\edit_pembimbing.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_mahasiswa"', 'C:\\xampp82\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\edit_pembimbing.php', 44)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp82\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\edit_pembimbing.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/edit_pembimbing', [], true)
+ 5 APPPATH\Controllers\Admin.php(622): view('admin/edit_pembimbing', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->edit_pembimbing()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-16 13:31:12 --> ErrorException: Undefined array key "nama_mahasiswa"
+[Method: GET, Route: admin/edit_pembimbing]
+in APPPATH\Views\admin\edit_pembimbing.php on line 44.
+ 1 APPPATH\Views\admin\edit_pembimbing.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_mahasiswa"', 'C:\\xampp82\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\edit_pembimbing.php', 44)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp82\\htdocs\\sistem_pengajuan_skripsi\\app\\Views\\admin\\edit_pembimbing.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('admin/edit_pembimbing', [], true)
+ 5 APPPATH\Controllers\Admin.php(622): view('admin/edit_pembimbing', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->edit_pembimbing()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,434 @@
+ERROR - 2026-06-03 08:59:51 --> Unknown column 'd1.nama_dosen' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN (\'Ditetapkan\',\'Menunggu Sidang\')
+AND `pengajuan`.`kondisi_data` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN (\'Ditetapkan\',\'Menunggu Sidang\')
+AND `pengajuan`.`kondisi_data` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN (\'Ditetapkan\',\'Menunggu Sidang\')
+AND `pengajuan`.`kondisi_data` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN :pengajuan.status:
+AND `pengajuan`.`kondisi_data` = :pengajuan.kondisi_data:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(762): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->arsip_skripsi()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-03 08:59:52 --> Unknown column 'd1.nama_dosen' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN (\'Ditetapkan\',\'Menunggu Sidang\')
+AND `pengajuan`.`kondisi_data` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN (\'Ditetapkan\',\'Menunggu Sidang\')
+AND `pengajuan`.`kondisi_data` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN (\'Ditetapkan\',\'Menunggu Sidang\')
+AND `pengajuan`.`kondisi_data` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `pengajuan`.*, `mahasiswa`.`nama` as `nama_mahasiswa`, `topik_skripsi`.`nama_topik`, `d1`.`nama_dosen` AS `nama_pembimbing1`, `d2`.`nama_dosen` AS `nama_pembimbing2`
+FROM `pengajuan`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`npm` = `pengajuan`.`npm`
+LEFT JOIN `topik_skripsi` ON `topik_skripsi`.`id_topik` = `pengajuan`.`id_topik`
+LEFT JOIN `pembimbing` ON `pembimbing`.`id_pengajuan` = `pengajuan`.`id_pengajuan`
+LEFT JOIN `dosen` `d1` ON `d1`.`nidn` = `pembimbing`.`pembimbing_1`
+LEFT JOIN `dosen` `d2` ON `d2`.`nidn` = `pembimbing`.`pembimbing_2`
+WHERE `pengajuan`.`status` IN :pengajuan.status:
+AND `pengajuan`.`kondisi_data` = :pengajuan.kondisi_data:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(762): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->arsip_skripsi()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-03 09:38:02 --> Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:02 --> [Caused by] mysqli_sql_exception: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-03 09:38:07 --> Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:07 --> [Caused by] mysqli_sql_exception: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-03 09:38:14 --> Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:14 --> [Caused by] mysqli_sql_exception: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-03 09:38:15 --> Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+[Method: GET, Route: admin/batal_penetapan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-03 09:38:15 --> [Caused by] mysqli_sql_exception: Unknown column 'm.nama_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = \'Dibatalkan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id_pengajuan`, `p`.`npm`, `m`.`nama_mahasiswa`, `p`.`judul`, `p`.`status`, `p`.`kondisi_data`, `p`.`id_topik`
+FROM `pengajuan` as `p`
+LEFT JOIN `mahasiswa` as `m` ON `m`.`npm` = `p`.`npm`
+WHERE `p`.`kondisi_data` = :p.kondisi_data:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(683): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->batal_penetapan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

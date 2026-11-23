@@ -1,0 +1,1448 @@
+ERROR - 2026-06-22 11:39:58 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:39:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:39:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:39:58 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:39:59 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:39:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:39:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:39:59 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:40:00 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:00 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:40:01 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:01 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:40:16 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:16 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:40:17 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:17 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:40:18 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:18 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:40:40 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:40:40 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1143): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:42:06 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:42:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:42:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:42:06 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 11:42:08 --> Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:42:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+[Method: GET, Route: admin/statistik]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:42:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-22 11:42:08 --> [Caused by] mysqli_sql_exception: Table 'sistem_pengajuan_skripsi.pengajuan_skripsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 4 APPPATH\Controllers\Admin.php(1146): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                MONTH(created_at) as bulan, 
+                COUNT(id_pengajuan) as total 
+            FROM pengajuan_skripsi 
+            WHERE YEAR(created_at) = \'2026\'
+            GROUP BY MONTH(created_at)
+            ORDER BY MONTH(created_at) ASC
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin->statistik()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-22 13:29:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_pengajua...', 3306, '', 0)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...', Array)
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sistem_pengajuan_skripsi\app\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...', Array)
+#3 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+#4 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sistem_pengajuan_skripsi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\sistem_pengajuan_skripsi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2026-06-22 13:29:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: proses_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Auth.php(35): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE username = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Auth->proses_login()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

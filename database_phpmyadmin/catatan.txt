@@ -1,0 +1,17 @@
+Perihal Database 
+"Halo, untuk menjalankan database-nya, silakan import dulu file sistem_pengajuan_skripsi.sql ke phpMyAdmin anda"
+
+Adapun user dan pass default yg saya buat:
+admin
+username: admin
+pass : 1234
+-------------------
+dosen 
+username : 100001
+pass : 1234
+-------------------
+mahasiswa
+username: 220001 
+pass : 1234
+
+

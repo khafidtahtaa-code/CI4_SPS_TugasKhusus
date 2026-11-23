@@ -1,0 +1,19 @@
+Bagian mahasiswa:
+di Tracking Status Pengajuan itu sebagian sudah sesuai dengan project code yang saya berikan kemarin,
+tetapi ada yang belum sesuai juga, yang belum sesuai yakni:
+1. Apabila di tolak maka pesan di bagian bagian Ditetapkan (Hasil Akhir Admin) itu pesannya diganti menjadi
+   "Pengajuan anda Ditolak sehingga tidak bisa lanjut ke tahap penetapan" 
+   terus bawahnya kasih pesan lagi "Anda dapat mengisi pengajuan skripsi kembali"
+2. Apabila pengajuan sudah di ACC dosen dan sudah ditetapkan pembimbing oleh admin lalu selang beberapa menit
+   dibatalkan oleh admin, itu pesannya di bagian Ditetapkan (Hasil Akhir Admin) diganti menjadi
+   "Mohon maaf penetapan dibatalkan oleh admin" terus bawahnya kasih pesan lagi
+   "Anda dapat mengisi pengajuan skripsi kembali"
+
+Lalu mahasiswa hanya bisa menghapus data pengajuannya di Tracking Status Pengajuan jika masih pending, setelahnya Data hanya bisa di hapus oleh admin
+Kemudian data pengajuan dari mahasiswa di Tracking Status Pengajuan itu jangan dibuat otomatis reset/hilang ketiga mahasiswa keluar dari menu di Tracking Status Pengajuan/Logout dari dashboardnya
+jadi biarkan saja datanya, data akan hilang jika admin sendiri yang menghapusnya. 
+
+Sebagai contoh:
+Di sistem sekarang ini, misal saya sudah mengisi pengajuan terus ditolak/dibatalkan otomatis Informasi Pengajuan Skripsi
+Total Pengajuan Saya ada 1 kan, nah terus saya keluar dari menu ataupun halaman, datanya hilang/kereset baru yang isinya gak ada karena belum mengisi pengajuan lagi.
+Nah, buatkan agar datanya gak hilang/kereset setelah saya keluar dari menu ataupun halaman, data akan hilang jika admin sendiri yang menghapusnya. 

@@ -1,0 +1,60 @@
+CRITICAL - 2026-06-17 12:43:56 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 339.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(178): view('mahasiswa/status', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-17 12:44:20 --> ParseError: syntax error, unexpected token "else"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 287.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(178): view('mahasiswa/status', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-17 12:53:06 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 288.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(178): view('mahasiswa/status', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-17 12:57:04 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 250.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(178): view('mahasiswa/status', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-17 12:57:12 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: mahasiswa/status]
+in APPPATH\Views\mahasiswa\status.php on line 250.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('mahasiswa/status', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(178): view('mahasiswa/status', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Mahasiswa->status()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

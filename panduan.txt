@@ -1,0 +1,29 @@
+
+Cara jalankan ci4 
+
+XAMPP: (Minimal PHP versi 8.1 ke atas).
+Copy folder project sistem_pengajuan_skripsi lalu letakkan di C:\xampp\htdocs\
+
+Buka phpMyAdmin
+Buat database baru dengan nama sistem_pengajuan_skripsi
+Import file database_skripsi.sql
+
+Kemudian coba buka pakai alamat ini di browser
+http://localhost/sistem_pengajuan_skripsi/public/
+
+
+username dan password login sementara
+
+admin
+username: admin
+pass : 1234
+
+-------------------
+dosen 
+username : 100001
+pass : 1234
+
+-------------------
+mahasiswa
+username: 220001 
+pass : 1234
